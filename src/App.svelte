@@ -44,20 +44,14 @@
 	let initFocus = null
 	let condition = null
 	let todoList = []
-	let jsondata = GetCookie('data');
+	let jsondata = GetCookie('data')
 
 	if( jsondata !== '' ) {
-		console.log(jsondata);
-		todoList = [
-			{ id: 0, done: false, title: 'レストランを予約する'},
-			// { id: 1, done: false, title: 'サプライズ用の指輪を買う'},
-			// { id: 2, done: false, title: 'フラッシュモブダンスを練習する'},
-		]
+		todoList = JSON.parse(jsondata)
 	} else {
 		todoList = []
 	}
 
-	
 	onMount(() => {
 		init()
 	})
@@ -69,11 +63,9 @@
 
 	function save () {
 		let expire   = new Date()
-
   	    expire.setTime( expire.getTime() + 1000 * 3600 * 24 );
-		let todolists = "id=0&done=false&title=レストランを予約する,id=1&done=false&title=サプライズ用の指輪を買う,id=2&done=true&title=フラッシュモブダンスを練習する";
-
-		document.cookie = 'data=' + todolists + ';expires=' + expire.toUTCString();
+		document.cookie = 'data=' + JSON.stringify(todoList) + ';expires=' + expire.toUTCString();
+		alert('保存しました');
 	}
 
 	function GetCookie( name ){
