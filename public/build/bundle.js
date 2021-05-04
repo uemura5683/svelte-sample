@@ -513,7 +513,7 @@ var app = (function () {
     	let dispose;
 
     	function input_change_handler() {
-    		/*input_change_handler*/ ctx[16].call(input, /*each_value*/ ctx[19], /*todo_index*/ ctx[20]);
+    		/*input_change_handler*/ ctx[15].call(input, /*each_value*/ ctx[19], /*todo_index*/ ctx[20]);
     	}
 
     	const block = {
@@ -530,18 +530,18 @@ var app = (function () {
     			label = element("label");
     			t3 = text(t3_value);
     			t4 = space();
-    			attr_dev(td0, "class", "col-1");
-    			add_location(td0, file, 26, 4, 1212);
+    			attr_dev(td0, "class", "col-2 col-lg-1");
+    			add_location(td0, file, 26, 4, 1284);
     			attr_dev(input, "class", "form-check-input me-2");
     			attr_dev(input, "type", "checkbox");
     			attr_dev(input, "id", input_id_value = /*todo*/ ctx[18].id);
-    			add_location(input, file, 30, 5, 1289);
+    			add_location(input, file, 30, 5, 1377);
     			attr_dev(label, "for", label_for_value = /*todo*/ ctx[18].id);
     			attr_dev(label, "class", "form-check-label");
-    			add_location(label, file, 31, 5, 1389);
-    			attr_dev(td1, "class", "col-11");
-    			add_location(td1, file, 29, 4, 1264);
-    			add_location(tr, file, 25, 4, 1203);
+    			add_location(label, file, 31, 5, 1477);
+    			attr_dev(td1, "class", "col-10 col-12");
+    			add_location(td1, file, 29, 4, 1345);
+    			add_location(tr, file, 25, 4, 1275);
     			this.first = tr;
     		},
     		m: function mount(target, anchor) {
@@ -693,38 +693,38 @@ var app = (function () {
 
     			attr_dev(h2, "class", "h3 mb-3");
     			add_location(h2, file, 2, 1, 40);
-    			attr_dev(div0, "class", "col-12 mb-2");
-    			add_location(div0, file, 4, 2, 96);
-    			attr_dev(button0, "class", "btn btn-primary col-5 col-lg-1 col-md-2 me-2 mb-2");
-    			add_location(button0, file, 5, 2, 135);
-    			attr_dev(button1, "class", "btn btn-primary col-5 col-lg-1 col-md-2 me-2 mb-2");
-    			add_location(button1, file, 6, 2, 254);
-    			attr_dev(button2, "class", "btn btn-primary col-5 col-lg-1 col-md-2 me-2 mb-2");
-    			add_location(button2, file, 7, 2, 374);
-    			attr_dev(button3, "class", "btn btn-primary col-5 col-lg-1 col-md-2 mb-2");
-    			add_location(button3, file, 8, 2, 492);
-    			attr_dev(div1, "class", "mb-3");
+    			attr_dev(div0, "class", "col-12 mb-2 svelte-1hcy0v1");
+    			add_location(div0, file, 4, 2, 105);
+    			attr_dev(button0, "class", "all-btn btn btn-primary col-6 col-lg-1 col-md-2 me-2 mb-2 svelte-1hcy0v1");
+    			add_location(button0, file, 5, 2, 144);
+    			attr_dev(button1, "class", "incomplete btn btn-primary col-6 col-lg-1 col-md-2 me-2 mb-2 svelte-1hcy0v1");
+    			add_location(button1, file, 6, 2, 271);
+    			attr_dev(button2, "class", "complete btn btn-primary col-6 col-lg-1 col-md-2 me-2 mb-2 svelte-1hcy0v1");
+    			add_location(button2, file, 7, 2, 402);
+    			attr_dev(button3, "class", "btn btn-primary col-6 col-lg-1 col-md-2 mb-2 svelte-1hcy0v1");
+    			add_location(button3, file, 8, 2, 529);
+    			attr_dev(div1, "class", "mb-3 c-filter svelte-1hcy0v1");
     			add_location(div1, file, 3, 1, 75);
     			attr_dev(input, "type", "text");
-    			attr_dev(input, "class", "col-12 col-lg-4 col-md-6 mb-2");
-    			add_location(input, file, 11, 2, 619);
-    			attr_dev(button4, "class", "btn btn-outline-secondary col-5 col-lg-2 col-md-2 mb-2");
-    			add_location(button4, file, 12, 2, 720);
-    			attr_dev(button5, "class", "btn btn-secondary col-5 col-lg-2 col-md-2 mb-2");
-    			add_location(button5, file, 13, 2, 836);
-    			attr_dev(div2, "class", "mb-2");
-    			add_location(div2, file, 10, 1, 598);
-    			attr_dev(th0, "class", "col-1");
-    			add_location(th0, file, 19, 5, 1038);
-    			attr_dev(th1, "class", "col-11");
-    			add_location(th1, file, 20, 5, 1069);
-    			add_location(tr, file, 18, 4, 1028);
-    			add_location(thead, file, 17, 3, 1016);
-    			add_location(tbody, file, 23, 3, 1122);
+    			attr_dev(input, "class", "col-12 col-lg-4 col-md-6 mb-2 svelte-1hcy0v1");
+    			add_location(input, file, 11, 2, 665);
+    			attr_dev(button4, "class", "btn btn-outline-secondary col-6 col-lg-2 col-md-2 me-2 mb-2 svelte-1hcy0v1");
+    			add_location(button4, file, 12, 2, 766);
+    			attr_dev(button5, "class", "btn btn-secondary col-6 col-lg-2 col-md-2 me-2 mb-2 svelte-1hcy0v1");
+    			add_location(button5, file, 13, 2, 887);
+    			attr_dev(div2, "class", "mb-2 c-search svelte-1hcy0v1");
+    			add_location(div2, file, 10, 1, 635);
+    			attr_dev(th0, "class", "col-2 col-lg-1");
+    			add_location(th0, file, 19, 5, 1094);
+    			attr_dev(th1, "class", "col-10 col-12");
+    			add_location(th1, file, 20, 5, 1134);
+    			add_location(tr, file, 18, 4, 1084);
+    			add_location(thead, file, 17, 3, 1072);
+    			add_location(tbody, file, 23, 3, 1194);
     			attr_dev(table, "class", "table table-dark table-striped");
-    			add_location(table, file, 16, 2, 966);
+    			add_location(table, file, 16, 2, 1022);
     			attr_dev(div3, "class", "mb-3");
-    			add_location(div3, file, 15, 1, 945);
+    			add_location(div3, file, 15, 1, 1001);
     			attr_dev(div4, "class", "container");
     			add_location(div4, file, 1, 0, 15);
     		},
@@ -749,7 +749,7 @@ var app = (function () {
     			append_dev(div4, div2);
     			append_dev(div2, input);
     			set_input_value(input, /*title*/ ctx[2]);
-    			/*input_binding*/ ctx[13](input);
+    			/*input_binding*/ ctx[12](input);
     			append_dev(div2, t12);
     			append_dev(div2, button4);
     			append_dev(div2, t14);
@@ -771,13 +771,13 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(button0, "click", /*click_handler*/ ctx[8], false, false, false),
-    					listen_dev(button1, "click", /*click_handler_1*/ ctx[9], false, false, false),
-    					listen_dev(button2, "click", /*click_handler_2*/ ctx[10], false, false, false),
-    					listen_dev(button3, "click", /*click_handler_3*/ ctx[11], false, false, false),
-    					listen_dev(input, "input", /*input_input_handler*/ ctx[12]),
-    					listen_dev(button4, "click", /*click_handler_4*/ ctx[14], false, false, false),
-    					listen_dev(button5, "click", /*click_handler_5*/ ctx[15], false, false, false)
+    					listen_dev(button0, "click", /*click_handler*/ ctx[7], false, false, false),
+    					listen_dev(button1, "click", /*click_handler_1*/ ctx[8], false, false, false),
+    					listen_dev(button2, "click", /*click_handler_2*/ ctx[9], false, false, false),
+    					listen_dev(button3, "click", /*click_handler_3*/ ctx[10], false, false, false),
+    					listen_dev(input, "input", /*input_input_handler*/ ctx[11]),
+    					listen_dev(button4, "click", /*click_handler_4*/ ctx[13], false, false, false),
+    					listen_dev(button5, "click", /*click_handler_5*/ ctx[14], false, false, false)
     				];
 
     				mounted = true;
@@ -799,7 +799,7 @@ var app = (function () {
     		o: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div4);
-    			/*input_binding*/ ctx[13](null);
+    			/*input_binding*/ ctx[12](null);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].d();
@@ -819,6 +819,13 @@ var app = (function () {
     	});
 
     	return block;
+    }
+
+    function save() {
+    	let expire = new Date();
+    	expire.setTime(expire.getTime() + 1000 * 3600 * 24);
+    	let todolists = "id=0&done=false&title=レストランを予約する,id=1&done=false&title=サプライズ用の指輪を買う,id=2&done=true&title=フラッシュモブダンスを練習する";
+    	document.cookie = "data=" + todolists + ";expires=" + expire.toUTCString();
     }
 
     function GetCookie(name) {
@@ -849,7 +856,16 @@ var app = (function () {
     	let initFocus = null;
     	let condition = null;
     	let todoList = [];
-    	console.log(GetCookie("data"));
+    	let jsondata = GetCookie("data");
+
+    	if (jsondata !== "") {
+    		console.log(jsondata);
+
+    		todoList = [{ id: 0, done: false, title: "レストランを予約する" }]; // { id: 1, done: false, title: 'サプライズ用の指輪を買う'},
+    		// { id: 2, done: false, title: 'フラッシュモブダンスを練習する'},
+    	} else {
+    		todoList = [];
+    	}
 
     	onMount(() => {
     		init();
@@ -858,12 +874,6 @@ var app = (function () {
     	function init() {
     		$$invalidate(2, title = "");
     		initFocus.focus();
-    	}
-
-    	function save() {
-    		let expire = new Date();
-    		expire.setTime(expire.getTime() + 1000 * 3600 * 24);
-    		document.cookie = "data=" + todoList + ";expires=" + expire.toUTCString();
     	}
 
     	function add(target) {
@@ -927,6 +937,7 @@ var app = (function () {
     		initFocus,
     		condition,
     		todoList,
+    		jsondata,
     		init,
     		save,
     		GetCookie,
@@ -940,6 +951,7 @@ var app = (function () {
     		if ("initFocus" in $$props) $$invalidate(3, initFocus = $$props.initFocus);
     		if ("condition" in $$props) $$invalidate(0, condition = $$props.condition);
     		if ("todoList" in $$props) $$invalidate(1, todoList = $$props.todoList);
+    		if ("jsondata" in $$props) jsondata = $$props.jsondata;
     		if ("filteredTodoList" in $$props) $$invalidate(4, filteredTodoList = $$props.filteredTodoList);
     	};
 
@@ -948,10 +960,18 @@ var app = (function () {
     	}
 
     	$$invalidate(4, filteredTodoList = (todoList, condition) => {
+    		document.querySelector(".all-btn");
+    			document.querySelector(".incomplete");
+    			document.querySelector(".complete");
+
     		return condition === null
     		? todoList
     		: todoList.filter(t => t.done === condition);
-    	});
+    	}); // switch (condition){
+    	// 	case true:
+    	// 		all_btn.classList.add('is_active');
+    	// 	break;
+    	// 	case false:
 
     	return [
     		condition,
@@ -959,7 +979,6 @@ var app = (function () {
     		title,
     		initFocus,
     		filteredTodoList,
-    		save,
     		add,
     		del,
     		click_handler,
