@@ -41,10 +41,10 @@
 	import { onMount } from 'svelte'
 
 	let title = ''
-	let initFocus = null
-	let condition = null
-	let todoList = []
-	let jsondata = GetCookie('data')
+	  , initFocus = null
+	  , condition = null
+	  , todoList = []
+	  , jsondata = GetCookie('data')
 
 	if( jsondata !== '' ) {
 		todoList = JSON.parse(jsondata)
@@ -69,22 +69,17 @@
 	}
 
 	function GetCookie( name ){
-		var result = null;
+		let result = null
+		  , cookieName = name + '='
+		  , allcookies = document.cookie
+		  , position = allcookies.indexOf( cookieName );
 
-		var cookieName = name + '=';
-		var allcookies = document.cookie;
-
-		var position = allcookies.indexOf( cookieName );
-		if( position != -1 )
-		{
-			var startIndex = position + cookieName.length;
-
-			var endIndex = allcookies.indexOf( ';', startIndex );
-			if( endIndex == -1 )
-			{
+		  if( position != -1 ) {
+			let startIndex = position + cookieName.length
+			  , endIndex = allcookies.indexOf( ';', startIndex );
+			if( endIndex == -1 ) {
 				endIndex = allcookies.length;
 			}
-
 			result = decodeURIComponent(
 				allcookies.substring( startIndex, endIndex ) );
 		}
@@ -112,26 +107,13 @@
 
 	$: filteredTodoList = (todoList, condition) => {
 
-		let   all_btn    = document.querySelector('.all-btn')
-		    , incomp_btn = document.querySelector('.incomplete')
-			, comp_btn   = document.querySelector('.complete');
+		let all_btn    = document.querySelector('.all-btn')
+		  , incomp_btn = document.querySelector('.incomplete')
+		  , comp_btn   = document.querySelector('.complete');
 
 		return condition === null
 						? todoList
 						: todoList.filter(t => t.done === condition)
-
-
-	// switch (condition){
-	// 	case true:
-	// 		all_btn.classList.add('is_active');
-	// 	break;
-	// 	case false:
-	// 		incomp_btn.classList.add('is_active');
-	// 	break;
-	// 	default:
-	// 		comp_btn.classList.add('is_active');
-	// 	break;
-	// }
 
 }
 </script>

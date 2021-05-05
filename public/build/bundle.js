@@ -1,5 +1,5 @@
 
-(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
+(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35730/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
 var app = (function () {
     'use strict';
 
@@ -814,14 +814,14 @@ var app = (function () {
     }
 
     function GetCookie(name) {
-    	var result = null;
-    	var cookieName = name + "=";
-    	var allcookies = document.cookie;
-    	var position = allcookies.indexOf(cookieName);
+    	let result = null,
+    		cookieName = name + "=",
+    		allcookies = document.cookie,
+    		position = allcookies.indexOf(cookieName);
 
     	if (position != -1) {
-    		var startIndex = position + cookieName.length;
-    		var endIndex = allcookies.indexOf(";", startIndex);
+    		let startIndex = position + cookieName.length,
+    			endIndex = allcookies.indexOf(";", startIndex);
 
     		if (endIndex == -1) {
     			endIndex = allcookies.length;
@@ -837,11 +837,12 @@ var app = (function () {
     	let filteredTodoList;
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("App", slots, []);
-    	let title = "";
-    	let initFocus = null;
-    	let condition = null;
-    	let todoList = [];
-    	let jsondata = GetCookie("data");
+
+    	let title = "",
+    		initFocus = null,
+    		condition = null,
+    		todoList = [],
+    		jsondata = GetCookie("data");
 
     	if (jsondata !== "") {
     		todoList = JSON.parse(jsondata);
@@ -956,11 +957,7 @@ var app = (function () {
     		return condition === null
     		? todoList
     		: todoList.filter(t => t.done === condition);
-    	}); // switch (condition){
-    	// 	case true:
-    	// 		all_btn.classList.add('is_active');
-    	// 	break;
-    	// 	case false:
+    	});
 
     	return [
     		condition,
