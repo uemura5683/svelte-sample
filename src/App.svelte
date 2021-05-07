@@ -22,16 +22,16 @@
 				</tr>
 			</thead>
 			<tbody>
-				{#each filteredTodoList(todoList, condition)  as todo (todo.id)}
-				<tr>
-				<td class="col-2 col-lg-1">
-					{todo.id + 1}
-				</td>
-				<td class="col-10 col-12">
-					<input class="form-check-input me-2" type="checkbox" bind:checked={todo.done} id="{todo.id}"> 
-					<label for="{todo.id}" class="form-check-label">{todo.title}</label>
-				</td>
-				</tr>
+				{#each filteredTodoList(todoList, condition) as todo (todo.id)}
+					<tr>
+					<td class="col-2 col-lg-1">
+						{todo.id + 1}
+					</td>
+					<td class="col-10 col-12">
+						<input class="form-check-input me-2" type="checkbox" bind:checked={todo.done} id="{todo.id}"> 
+						<label for="{todo.id}" class="form-check-label">{todo.title}</label>
+					</td>
+					</tr>				
 				{/each}
 			</tbody>
 		</table>
@@ -44,12 +44,10 @@
 	  , initFocus = null
 	  , condition = null
 	  , todoList = []
-	  , jsondata = GetCookie('data')
+	  , jsondata = GetCookie('data');
 
-	if( jsondata !== '' ) {
-		todoList = JSON.parse(jsondata)
-	} else {
-		todoList = []
+	if( !(jsondata === '' || jsondata === null) ) {
+		todoList = JSON.parse(jsondata);
 	}
 
 	onMount(() => {
@@ -66,6 +64,20 @@
   	    expire.setTime( expire.getTime() + 1000 * 3600 * 24 );
 		document.cookie = 'data=' + JSON.stringify(todoList) + ';expires=' + expire.toUTCString();
 		alert('保存しました');
+	}
+
+	function add(target) {
+		if( target !== '' ) {
+			todoList = [...todoList,
+			{
+				id: todoList.length,
+				done: false,
+				title
+			}]
+			init()
+		} else {
+			alert('タスクを入力してください'); 
+		}
 	}
 
 	function GetCookie( name ){
@@ -86,36 +98,17 @@
 		return result;
 	}
 
-
-	function add(target) {
-		if( target !== '' ) {
-			todoList = [...todoList,
-			{
-				id: todoList.length,
-				done: false,
-				title
-			}]
-			init()
-		} else {
-			alert('タスクを入力してください'); 
+	function del() {
+		if( !(jsondata === '' || jsondata === null) ) {
+			todoList = [];
 		}
 	}
 
-	function del() {
-		todoList = [];
-	}
-
 	$: filteredTodoList = (todoList, condition) => {
-
-		let all_btn    = document.querySelector('.all-btn')
-		  , incomp_btn = document.querySelector('.incomplete')
-		  , comp_btn   = document.querySelector('.complete');
-
 		return condition === null
 						? todoList
 						: todoList.filter(t => t.done === condition)
-
-}
+	}
 </script>
 <style>
 	@media (max-width: 767px) {
