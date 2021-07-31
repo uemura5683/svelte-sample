@@ -3,13 +3,9 @@
 </script>
 
 <div class="container hello">
-	<h2 class="h3 mb-3">SVELTE</h2>
-	<div on:click={() => push('/hello')}>Hello</div>
-	<div on:click={() => push('/task')}>Task</div>
+	<h2 class="h3 mb-3 title">SVELTE</h2>
+	<div class="row">
+		<div on:click={() => push('/sample')} class="col-4">Sample</div>
+		<div on:click={() => push('/task')} class="col-4">Task</div>
+	</div>
 </div>
-
-<style>
-	.container.hello {
-		margin-bottom: 20px;
-	}
-</style>
