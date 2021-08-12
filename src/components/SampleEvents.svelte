@@ -78,7 +78,7 @@
 		</div>
 
 	</div>
-	<div on:click={() => push('/')}>TOP</div>
+	<div class="pointer" on:click={() => push('/')}>TOP</div>
 </div>
 
 <style>
