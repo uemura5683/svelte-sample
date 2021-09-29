@@ -115,7 +115,17 @@
 </div>
 <style>
 	.c-search input {
-		height: 38px;
+	  height: 38px;
+	}
+	table tr * {
+      color : white;
+	}
+	table tr input,
+	table tr label {
+	  display: inline-block;
+	}	
+	table tr label {
+	  width: calc(100% - 30px);
 	}
 	@media (max-width: 767px) {
 		.c-search,
