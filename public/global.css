@@ -17,7 +17,7 @@ body {
 }
 
 a {
-	color: rgb(0,100,200);
+	color: black;
 	text-decoration: none;
 }
 
@@ -87,6 +87,10 @@ h2{
 .pointer {
 	cursor: pointer;
 }
+.pointer-none {
+	pointer-events: none;
+	opacity: .7;
+}
 /**
 * page
 **/
@@ -96,15 +100,6 @@ h2{
     border-bottom: 1px solid #FF3F00;
     padding: 0 0 5px;
 }
-.samplelist {
-
-}
 .sampleli {
 	margin: 0 0 20px;
-}
-.sampleli p {
-
-}
-.sampleli h1 {
-
 }

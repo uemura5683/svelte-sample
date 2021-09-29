@@ -25,7 +25,7 @@
 	/**
 	 * Components events
 	*/
-	import Inner from './Inner.svelte';
+	import Inner from './parts/Inner.svelte';
 
 	function handleMessage(event) {
 		alert(event.detail.text);
@@ -34,7 +34,7 @@
 	/**
 	 * DOM event forwarding
 	*/
-	import CustomButton from './CustomButton.svelte';
+	import CustomButton from './parts/CustomButton.svelte';
 
 	function handleClick3() {
 		alert('clicked');
