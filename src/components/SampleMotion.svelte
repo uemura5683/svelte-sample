@@ -21,8 +21,6 @@
 	let size = spring(10);
 
 </script>
-
-<!-- HTML部 -->
 <div class="container">
 	<h2 class="h3 mb-3 title">Sample Motion</h2>
 	<div class="samplelist">
@@ -63,7 +61,6 @@
 	</div>
 	<div class="pointer" on:click={() => push('/')}>TOP</div>
 </div>
-
 <style>
 	/**
 	* tweened

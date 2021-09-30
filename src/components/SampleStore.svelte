@@ -65,11 +65,7 @@
 
 	export const count = createCount();
 
-	
-
 </script>
-
-<!-- HTML部 -->
 <div class="container">
 	<h2 class="h3 mb-3 title">Sample Store</h2>
 	<div class="samplelist">

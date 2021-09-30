@@ -11,12 +11,12 @@
 				Sample
 		</div>
 		<div 
-			on:click={() => push('/sampleevents')}
+			on:click={() => push('/events')}
 			class="col-4 mb-2 pointer">
 				SampleEvents
 		</div>
 		<div 
-			on:click={() => push('/samplebindings')}
+			on:click={() => push('/bindings')}
 			class="col-4 mb-2 pointer">
 				SampleBindings
 		</div>
@@ -26,22 +26,22 @@
 				SampleMotion
 		</div>
 		<div 
-			on:click={() => push('/samplestore')}
+			on:click={() => push('/store')}
 			class="col-4 mb-2 pointer">
 				SampleStore
 		</div>
 		<div 
-			on:click={() => push('/sampletrantitions')}
+			on:click={() => push('/trantitions')}
 			class="col-4 mb-2 pointer">
 				SampleTrantitions
 		</div>		
 		<div 
-			on:click={() => push('/samplesvg')}
+			on:click={() => push('/svg')}
 			class="col-4 mb-2 pointer">
 				SampleSVG
 		</div>
 		<div 
-			on:click={() => push('/sampleclasses')}
+			on:click={() => push('/classes')}
 			class="col-4 mb-2 pointer">
 				SampleSlasses
 		</div>

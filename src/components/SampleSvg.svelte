@@ -52,8 +52,6 @@
 	let visible = true;
 
 </script>
-
-<!-- HTML部 -->
 <div class="container">
 	<h2 class="h3 mb-3 title">Sample SVG</h2>
 	<div class="samplelist">
@@ -134,7 +132,6 @@
 	<div class="pointer" on:click={() => push('/')}>TOP</div>
 </div>
 <link href="https://fonts.googleapis.com/css?family=Overpass:100,400" rel="stylesheet">
-
 <style>
 /**
 * clock
@@ -167,7 +164,6 @@ svg.clock {
 .clock .second-counterweight {
 	stroke-width: 3;
 }
-
 /**
 * svg
 */

@@ -12,8 +12,6 @@
     let big = false;
 
 </script>
-
-<!-- HTML部 -->
 <div class="container">
     <h2 class="h3 mb-3 title">Sample CLASSES</h2>
     <div class="samplelist">
@@ -50,10 +48,8 @@
 			</div>
         </div>
 	</div>
-
     <div class="pointer" on:click={() => push('/')}>TOP</div>
 </div>
-
 <style>
     /**
      * The class directive
@@ -62,7 +58,6 @@
 		background-color: #ff3e00;
 		color: white;
 	}
-
 	/**
 	 * Shorthand class directive
 	*/

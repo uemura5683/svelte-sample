@@ -98,13 +98,11 @@
 			throw new Error(text);
 		}
 	}
-
 	function handleClick5() {
 		promise = getRandomNumber();
 	}
-</script>
 
-<!-- HTML部 -->
+</script>
 <div class="container">
 	<h2 class="h3 mb-3 title">Sample</h2>
 	<div class="samplelist">

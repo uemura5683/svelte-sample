@@ -43,20 +43,16 @@
 	 * custom js transitions
 	*/
 	let js_visible = true;
-
 	function typewriter(node, { speed = 5 }) {
 		const valid = (
 			node.childNodes.length === 1 &&
 			node.childNodes[0].nodeType === Node.TEXT_NODE
 		);
-
 		if (!valid) {
 			throw new Error(`This transition only works on elements with a single text node child`);
 		}
-
 		const text = node.textContent;
 		const duration = text.length * speed;
-
 		return {
 			duration,
 			tick: t => {
@@ -73,8 +69,6 @@
 	let status = 'waiting...';
 
 </script>
-
-<!-- HTML部 -->
 <div class="container">
 	<h2 class="h3 mb-3 title">Sample Transitions</h2>
 	<div class="samplelist">
@@ -84,7 +78,6 @@
 				<input type="checkbox" bind:checked={visible}>
 				visible
 			</label>
-			
 			{#if visible}
 				<p transition:fade>
 					Fades in and out
@@ -97,28 +90,24 @@
 				<input type="checkbox" bind:checked={add_visible}>
 				visible
 			</label>
-			
 			{#if add_visible}
 				<p transition:fly="{{ y: 200, duration: 200}}">
 					Fades in and out
 				</p>
 			{/if}
 		</div>
-
 		<div class="sampleli">
 			<p class="sub-title">In and Out</p>
 			<label>
 				<input type="checkbox" bind:checked={inout_visible}>
 				visible
 			</label>
-			
 			{#if inout_visible}
 				<p in:fly="{{ y: 200, duration: 2000 }}" out:fade>
 					Flies in, fades out
 				</p>
 			{/if}
 		</div>
-
 		<div class="sampleli" style="position: relative;">
 			<p class="sub-title">Custom css transitions</p>
 			<label>
@@ -133,7 +122,6 @@
 				{/if}
 			</div>
 		</div>
-
 		<div class="sampleli" style="position: relative;">
 			<p class="sub-title">Custom js transitions</p>
 			<label>
@@ -148,7 +136,6 @@
 				{/if}
 			</div>
 		</div>
-
 		<div class="sampleli" style="position: relative;">
 			<p class="sub-title">Transition events</p>
 			<p>status: {status}</p>
@@ -171,7 +158,6 @@
 	</div>
 	<div class="pointer" on:click={() => push('/')}>TOP</div>
 </div>
-
 <style>
 	.centered_content.css {
 		height: 200px;

@@ -105,8 +105,6 @@
 	$: remaining_bind = todos_bind.filter(t => !t.done_bind).length;
 
 </script>
-
-<!-- HTML部 -->
 <div class="container">
 	<h2 class="h3 mb-3 title">Sample BIGINGS</h2>
 	<div class="samplelist">
@@ -115,7 +113,6 @@
             <input bind:value={name} placeholder="enter your name">
             <p>Hello {name || 'user'}</p>
 		</div>
-
         <div class="samplelist">
             <div class="sampleli">
                 <p class="sub-title">Numeric inputs</p>
@@ -130,7 +127,6 @@
                 <p> {a} + {b} = {a + b}</p>
             </div>
         </div>
-
 		<div class="sampleli">
 			<p class="sub-title">Checkbox Inputs</p>
             <label>
@@ -146,35 +142,28 @@
                 Subscribe
             </button>
 		</div>
-
 		<div class="sampleli">
 			<p class="sub-title">Group Inputs</p>
             <h4>Size</h4>
-
             <label>
                 <input type=radio bind:group={scoops2} value={1}>
                 One scoop
             </label>
-            
             <label>
                 <input type=radio bind:group={scoops2} value={2}>
                 Two scoops
             </label>
-            
             <label>
                 <input type=radio bind:group={scoops2} value={3}>
                 Three scoops
             </label>
-            
             <h4 class="mt-2">Flavours</h4>
-            
             {#each menu as flavour}
                 <label>
                     <input type=checkbox bind:group={flavours} value={flavour}>
                     {flavour}
                 </label>
             {/each}
-            
             {#if flavours.length === 0}
                 <p>Please select at least one flavour</p>
             {:else if flavours.length > scoops}
@@ -186,7 +175,6 @@
                 </p>
             {/if}
         </div>
-
         <!--
 		<div class="sampleli">
 			<p class="sub-title">Textarea Inputs</p>
@@ -194,7 +182,6 @@
             {@html marked(text)}
         </div>
         -->
-
 		<div class="sampleli">
 			<p class="sub-title">File Inputs</p>
             <label for="avatar">Upload a picture:</label>
@@ -205,7 +192,6 @@
                 name="avatar"
                 type="file"
             />
-            
             <label for="many">Upload multiple files of any type:</label>
             <input
                 bind:files
@@ -213,16 +199,13 @@
                 multiple
                 type="file"
             />
-            
             {#if files}
                 <h4 class="mt-2">Selected files:</h4>
                 {#each Array.from(files) as file}
                     <p>{file.name} ({file.size} bytes) </p>
                 {/each}
             {/if}
-            
         </div>
-
         <div class="sampleli">
 			<p class="sub-title">Insecurity questions</p>
             <form on:submit|preventDefault={handleSubmit}>
@@ -239,7 +222,6 @@
                 </button>
             </form>
         </div>
-
         <div class="sampleli">
 			<p class="sub-title">Size</p>
             <label>
@@ -256,9 +238,7 @@
                 <input type=radio bind:group={scoops2} value={3}>
                 Three scoops
             </label>
-            
             <h4 class="mt-2">Flavours</h4>
-            
             <select multiple bind:value={flavours2}>
                 {#each menu2 as flavour}
                     <option value={flavour}>
@@ -266,7 +246,6 @@
                     </option>
                 {/each}
             </select>
-            
             {#if flavours2.length === 0}
                 <p>Please select at least one flavour</p>
             {:else if flavours2.length > scoops2}
@@ -278,17 +257,14 @@
                 </p>
             {/if}
         </div>
-
         <div class="sampleli">
 			<p class="sub-title">Todos</p>
-
             {#each todos_bind as todo_bind}
                 <div>
                     <input
                         type=checkbox
                         bind:checked={todo_bind.done_bind}
                     >
-            
                     <input
                         placeholder="What needs to be done?"
                         bind:value={todo_bind.text_bind}
@@ -296,23 +272,24 @@
                     >
                 </div>
             {/each}
-            
             <p>{remaining_bind} remaining</p>
-            
             <button on:click={add_bind}>
                 Add new
             </button>
-            
             <button on:click={clear_bind}>
                 Clear completed
             </button>
         </div>
-
     </div>
 	<div class="pointer" on:click={() => push('/')}>TOP</div>
 </div>
-
 <style>
-	.domevents { width: 100%; height: 100%; }
-    textarea { width: 100%; height: 200px; }
+	.domevents {
+        width: 100%;
+        height: 100%;
+    }
+    textarea {
+        width: 100%;
+        height: 200px;
+    }
 </style>

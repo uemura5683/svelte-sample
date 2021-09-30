@@ -2296,23 +2296,23 @@ var app = (function () {
     			attr_dev(div1, "class", "col-4 mb-2 pointer");
     			add_location(div1, file$d, 12, 2, 250);
     			attr_dev(div2, "class", "col-4 mb-2 pointer");
-    			add_location(div2, file$d, 17, 2, 357);
+    			add_location(div2, file$d, 17, 2, 351);
     			attr_dev(div3, "class", "col-4 mb-2 pointer");
-    			add_location(div3, file$d, 22, 2, 468);
+    			add_location(div3, file$d, 22, 2, 456);
     			attr_dev(div4, "class", "col-4 mb-2 pointer");
-    			add_location(div4, file$d, 27, 2, 575);
+    			add_location(div4, file$d, 27, 2, 563);
     			attr_dev(div5, "class", "col-4 mb-2 pointer");
-    			add_location(div5, file$d, 32, 2, 680);
+    			add_location(div5, file$d, 32, 2, 662);
     			attr_dev(div6, "class", "col-4 mb-2 pointer");
-    			add_location(div6, file$d, 37, 2, 799);
+    			add_location(div6, file$d, 37, 2, 775);
     			attr_dev(div7, "class", "col-4 mb-2 pointer");
-    			add_location(div7, file$d, 42, 2, 900);
+    			add_location(div7, file$d, 42, 2, 870);
     			attr_dev(div8, "class", "col-4 mb-2 pointer");
-    			add_location(div8, file$d, 47, 2, 1009);
+    			add_location(div8, file$d, 47, 2, 973);
     			attr_dev(a, "href", "https://svelte.dev/examples");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "class", "pointer");
-    			add_location(a, file$d, 52, 2, 1100);
+    			add_location(a, file$d, 52, 2, 1064);
     			attr_dev(div9, "class", "row");
     			add_location(div9, file$d, 6, 1, 135);
     			attr_dev(div10, "class", "container hello");
@@ -2393,13 +2393,13 @@ var app = (function () {
     	});
 
     	const click_handler = () => push('/sample');
-    	const click_handler_1 = () => push('/sampleevents');
-    	const click_handler_2 = () => push('/samplebindings');
+    	const click_handler_1 = () => push('/events');
+    	const click_handler_2 = () => push('/bindings');
     	const click_handler_3 = () => push('/saaplemotion');
-    	const click_handler_4 = () => push('/samplestore');
-    	const click_handler_5 = () => push('/sampletrantitions');
-    	const click_handler_6 = () => push('/samplesvg');
-    	const click_handler_7 = () => push('/sampleclasses');
+    	const click_handler_4 = () => push('/store');
+    	const click_handler_5 = () => push('/trantitions');
+    	const click_handler_6 = () => push('/svg');
+    	const click_handler_7 = () => push('/classes');
     	const click_handler_8 = () => push('/task');
     	$$self.$capture_state = () => ({ push });
 
@@ -2569,7 +2569,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (143:3) {#if user.loggedIn}
+    // (141:3) {#if user.loggedIn}
     function create_if_block_3$2(ctx) {
     	let button;
     	let mounted;
@@ -2579,7 +2579,7 @@ var app = (function () {
     		c: function create() {
     			button = element("button");
     			button.textContent = "Log out";
-    			add_location(button, file$b, 143, 3, 2714);
+    			add_location(button, file$b, 141, 3, 2698);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -2601,14 +2601,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3$2.name,
     		type: "if",
-    		source: "(143:3) {#if user.loggedIn}",
+    		source: "(141:3) {#if user.loggedIn}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (149:3) {#if !user.loggedIn}
+    // (147:3) {#if !user.loggedIn}
     function create_if_block_2$2(ctx) {
     	let button;
     	let mounted;
@@ -2618,7 +2618,7 @@ var app = (function () {
     		c: function create() {
     			button = element("button");
     			button.textContent = "Log in";
-    			add_location(button, file$b, 149, 4, 2809);
+    			add_location(button, file$b, 147, 4, 2793);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -2640,14 +2640,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$2.name,
     		type: "if",
-    		source: "(149:3) {#if !user.loggedIn}",
+    		source: "(147:3) {#if !user.loggedIn}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (161:3) {:else}
+    // (159:3) {:else}
     function create_else_block$1(ctx) {
     	let p;
 
@@ -2655,7 +2655,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = `${/*leix*/ ctx[14]} is between 5 and 10`;
-    			add_location(p, file$b, 161, 4, 3070);
+    			add_location(p, file$b, 159, 4, 3054);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -2670,14 +2670,14 @@ var app = (function () {
     		block,
     		id: create_else_block$1.name,
     		type: "else",
-    		source: "(161:3) {:else}",
+    		source: "(159:3) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (159:22) 
+    // (157:22) 
     function create_if_block_1$2(ctx) {
     	let p;
 
@@ -2685,7 +2685,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = `${/*leix*/ ctx[14]} is less than 5`;
-    			add_location(p, file$b, 159, 4, 3026);
+    			add_location(p, file$b, 157, 4, 3010);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -2700,14 +2700,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$2.name,
     		type: "if",
-    		source: "(159:22) ",
+    		source: "(157:22) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (157:3) {#if leix > 10}
+    // (155:3) {#if leix > 10}
     function create_if_block$3(ctx) {
     	let p;
 
@@ -2715,7 +2715,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = `${/*leix*/ ctx[14]} is greater than 10`;
-    			add_location(p, file$b, 157, 4, 2966);
+    			add_location(p, file$b, 155, 4, 2950);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -2730,14 +2730,14 @@ var app = (function () {
     		block,
     		id: create_if_block$3.name,
     		type: "if",
-    		source: "(157:3) {#if leix > 10}",
+    		source: "(155:3) {#if leix > 10}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (173:5) {#each things as thing (thing.id)}
+    // (171:5) {#each things as thing (thing.id)}
     function create_each_block_1$2(key_1, ctx) {
     	let first;
     	let thing;
@@ -2786,14 +2786,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1$2.name,
     		type: "each",
-    		source: "(173:5) {#each things as thing (thing.id)}",
+    		source: "(171:5) {#each things as thing (thing.id)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (179:5) {#each things as thing}
+    // (177:5) {#each things as thing}
     function create_each_block$3(ctx) {
     	let thing;
     	let current;
@@ -2834,14 +2834,14 @@ var app = (function () {
     		block,
     		id: create_each_block$3.name,
     		type: "each",
-    		source: "(179:5) {#each things as thing}",
+    		source: "(177:5) {#each things as thing}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (194:3) {:catch error}
+    // (192:3) {:catch error}
     function create_catch_block(ctx) {
     	let p;
     	let t_value = /*error*/ ctx[20].message + "";
@@ -2852,7 +2852,7 @@ var app = (function () {
     			p = element("p");
     			t = text(t_value);
     			set_style(p, "color", "red");
-    			add_location(p, file$b, 194, 4, 3874);
+    			add_location(p, file$b, 192, 4, 3858);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -2870,14 +2870,14 @@ var app = (function () {
     		block,
     		id: create_catch_block.name,
     		type: "catch",
-    		source: "(194:3) {:catch error}",
+    		source: "(192:3) {:catch error}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (192:3) {:then number}
+    // (190:3) {:then number}
     function create_then_block(ctx) {
     	let p;
     	let t0;
@@ -2889,7 +2889,7 @@ var app = (function () {
     			p = element("p");
     			t0 = text("The number is ");
     			t1 = text(t1_value);
-    			add_location(p, file$b, 192, 4, 3822);
+    			add_location(p, file$b, 190, 4, 3806);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -2908,14 +2908,14 @@ var app = (function () {
     		block,
     		id: create_then_block.name,
     		type: "then",
-    		source: "(192:3) {:then number}",
+    		source: "(190:3) {:then number}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (190:19)      <p>...waiting</p>    {:then number}
+    // (188:19)      <p>...waiting</p>    {:then number}
     function create_pending_block(ctx) {
     	let p;
 
@@ -2923,7 +2923,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "...waiting";
-    			add_location(p, file$b, 190, 4, 3782);
+    			add_location(p, file$b, 188, 4, 3766);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -2938,7 +2938,7 @@ var app = (function () {
     		block,
     		id: create_pending_block.name,
     		type: "pending",
-    		source: "(190:19)      <p>...waiting</p>    {:then number}",
+    		source: "(188:19)      <p>...waiting</p>    {:then number}",
     		ctx
     	});
 
@@ -3198,67 +3198,67 @@ var app = (function () {
     			div13 = element("div");
     			div13.textContent = "TOP";
     			attr_dev(h20, "class", "h3 mb-3 title");
-    			add_location(h20, file$b, 108, 1, 1745);
+    			add_location(h20, file$b, 106, 1, 1729);
     			attr_dev(p0, "class", "sub-title");
-    			add_location(p0, file$b, 111, 3, 1837);
-    			add_location(h1, file$b, 112, 3, 1877);
+    			add_location(p0, file$b, 109, 3, 1821);
+    			add_location(h1, file$b, 110, 3, 1861);
     			attr_dev(div0, "class", "sampleli");
-    			add_location(div0, file$b, 110, 2, 1811);
+    			add_location(div0, file$b, 108, 2, 1795);
     			attr_dev(p1, "class", "sub-title");
-    			add_location(p1, file$b, 115, 3, 1938);
-    			add_location(p2, file$b, 116, 3, 1976);
+    			add_location(p1, file$b, 113, 3, 1922);
+    			add_location(p2, file$b, 114, 3, 1960);
     			attr_dev(div1, "class", "sampleli");
-    			add_location(div1, file$b, 114, 2, 1912);
+    			add_location(div1, file$b, 112, 2, 1896);
     			attr_dev(p3, "class", "sub-title");
-    			add_location(p3, file$b, 119, 3, 2035);
-    			add_location(button0, file$b, 120, 3, 2084);
+    			add_location(p3, file$b, 117, 3, 2019);
+    			add_location(button0, file$b, 118, 3, 2068);
     			attr_dev(div2, "class", "sampleli");
-    			add_location(div2, file$b, 118, 2, 2009);
+    			add_location(div2, file$b, 116, 2, 1993);
     			attr_dev(p4, "class", "sub-title");
-    			add_location(p4, file$b, 125, 3, 2219);
-    			add_location(button1, file$b, 126, 3, 2269);
-    			add_location(p5, file$b, 130, 3, 2342);
-    			add_location(p6, file$b, 131, 3, 2377);
+    			add_location(p4, file$b, 123, 3, 2203);
+    			add_location(button1, file$b, 124, 3, 2253);
+    			add_location(p5, file$b, 128, 3, 2326);
+    			add_location(p6, file$b, 129, 3, 2361);
     			attr_dev(div3, "class", "sampleli");
-    			add_location(div3, file$b, 124, 2, 2193);
+    			add_location(div3, file$b, 122, 2, 2177);
     			attr_dev(p7, "class", "sub-title");
-    			add_location(p7, file$b, 134, 3, 2450);
-    			add_location(button2, file$b, 135, 3, 2498);
+    			add_location(p7, file$b, 132, 3, 2434);
+    			add_location(button2, file$b, 133, 3, 2482);
     			attr_dev(div4, "class", "sampleli");
-    			add_location(div4, file$b, 133, 2, 2424);
-    			add_location(h21, file$b, 139, 2, 2610);
+    			add_location(div4, file$b, 131, 2, 2408);
+    			add_location(h21, file$b, 137, 2, 2594);
     			attr_dev(p8, "class", "sub-title");
-    			add_location(p8, file$b, 141, 3, 2653);
+    			add_location(p8, file$b, 139, 3, 2637);
     			attr_dev(div5, "class", "sampleli");
-    			add_location(div5, file$b, 140, 2, 2627);
+    			add_location(div5, file$b, 138, 2, 2611);
     			attr_dev(p9, "class", "sub-title");
-    			add_location(p9, file$b, 155, 3, 2908);
+    			add_location(p9, file$b, 153, 3, 2892);
     			attr_dev(div6, "class", "sampleli");
-    			add_location(div6, file$b, 154, 2, 2882);
+    			add_location(div6, file$b, 152, 2, 2866);
     			attr_dev(p10, "class", "sub-title");
-    			add_location(p10, file$b, 165, 3, 3150);
-    			add_location(button3, file$b, 166, 3, 3196);
-    			add_location(h40, file$b, 171, 5, 3360);
-    			add_location(div7, file$b, 170, 4, 3349);
-    			add_location(h41, file$b, 177, 5, 3491);
-    			add_location(div8, file$b, 176, 4, 3480);
+    			add_location(p10, file$b, 163, 3, 3134);
+    			add_location(button3, file$b, 164, 3, 3180);
+    			add_location(h40, file$b, 169, 5, 3344);
+    			add_location(div7, file$b, 168, 4, 3333);
+    			add_location(h41, file$b, 175, 5, 3475);
+    			add_location(div8, file$b, 174, 4, 3464);
     			set_style(div9, "display", "grid");
     			set_style(div9, "grid-template-columns", "1fr 1fr");
     			set_style(div9, "grid-gap", "1em");
-    			add_location(div9, file$b, 169, 3, 3270);
+    			add_location(div9, file$b, 167, 3, 3254);
     			attr_dev(div10, "class", "sampleli");
-    			add_location(div10, file$b, 164, 2, 3124);
+    			add_location(div10, file$b, 162, 2, 3108);
     			attr_dev(p11, "class", "sub-title");
-    			add_location(p11, file$b, 185, 3, 3645);
-    			add_location(button4, file$b, 186, 3, 3686);
+    			add_location(p11, file$b, 183, 3, 3629);
+    			add_location(button4, file$b, 184, 3, 3670);
     			attr_dev(div11, "class", "sampleli");
-    			add_location(div11, file$b, 184, 2, 3619);
+    			add_location(div11, file$b, 182, 2, 3603);
     			attr_dev(div12, "class", "samplelist");
-    			add_location(div12, file$b, 109, 1, 1784);
+    			add_location(div12, file$b, 107, 1, 1768);
     			attr_dev(div13, "class", "pointer");
-    			add_location(div13, file$b, 198, 1, 3946);
+    			add_location(div13, file$b, 196, 1, 3930);
     			attr_dev(div14, "class", "container");
-    			add_location(div14, file$b, 107, 0, 1720);
+    			add_location(div14, file$b, 105, 0, 1704);
     		},
     		l: function claim(nodes) {
     			throw new Error_1$1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3734,7 +3734,7 @@ var app = (function () {
     		c: function create() {
     			button = element("button");
     			button.textContent = "Click to say hello";
-    			add_location(button, file$a, 12, 0, 188);
+    			add_location(button, file$a, 9, 0, 185);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3988,38 +3988,38 @@ var app = (function () {
     			div8 = element("div");
     			div8.textContent = "TOP";
     			attr_dev(h2, "class", "h3 mb-3 title");
-    			add_location(h2, file$8, 46, 1, 656);
+    			add_location(h2, file$8, 42, 1, 638);
     			attr_dev(p0, "class", "sub-title");
-    			add_location(p0, file$8, 49, 3, 755);
-    			attr_dev(div0, "class", "domevents svelte-o7p6o6");
-    			add_location(div0, file$8, 50, 3, 794);
+    			add_location(p0, file$8, 45, 3, 737);
+    			attr_dev(div0, "class", "domevents svelte-171vafx");
+    			add_location(div0, file$8, 46, 3, 776);
     			attr_dev(div1, "class", "sampleli");
-    			add_location(div1, file$8, 48, 2, 729);
+    			add_location(div1, file$8, 44, 2, 711);
     			attr_dev(p1, "class", "sub-title");
-    			add_location(p1, file$8, 56, 3, 937);
-    			attr_dev(div2, "class", "domevents svelte-o7p6o6");
-    			add_location(div2, file$8, 57, 3, 981);
+    			add_location(p1, file$8, 51, 3, 918);
+    			attr_dev(div2, "class", "domevents svelte-171vafx");
+    			add_location(div2, file$8, 52, 3, 962);
     			attr_dev(div3, "class", "sampleli");
-    			add_location(div3, file$8, 55, 2, 911);
+    			add_location(div3, file$8, 50, 2, 892);
     			attr_dev(p2, "class", "sub-title");
-    			add_location(p2, file$8, 63, 3, 1147);
-    			add_location(button, file$8, 64, 3, 1192);
+    			add_location(p2, file$8, 57, 3, 1127);
+    			add_location(button, file$8, 58, 3, 1172);
     			attr_dev(div4, "class", "sampleli");
-    			add_location(div4, file$8, 62, 2, 1121);
+    			add_location(div4, file$8, 56, 2, 1101);
     			attr_dev(p3, "class", "sub-title");
-    			add_location(p3, file$8, 70, 3, 1295);
+    			add_location(p3, file$8, 63, 3, 1274);
     			attr_dev(div5, "class", "sampleli");
-    			add_location(div5, file$8, 69, 2, 1269);
+    			add_location(div5, file$8, 62, 2, 1248);
     			attr_dev(p4, "class", "sub-title");
-    			add_location(p4, file$8, 75, 3, 1417);
+    			add_location(p4, file$8, 67, 3, 1395);
     			attr_dev(div6, "class", "sampleli");
-    			add_location(div6, file$8, 74, 2, 1391);
+    			add_location(div6, file$8, 66, 2, 1369);
     			attr_dev(div7, "class", "samplelist");
-    			add_location(div7, file$8, 47, 1, 702);
+    			add_location(div7, file$8, 43, 1, 684);
     			attr_dev(div8, "class", "pointer");
-    			add_location(div8, file$8, 80, 1, 1525);
+    			add_location(div8, file$8, 71, 1, 1502);
     			attr_dev(div9, "class", "container");
-    			add_location(div9, file$8, 45, 0, 631);
+    			add_location(div9, file$8, 41, 0, 613);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4224,7 +4224,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (142:12) {:else}
+    // (138:12) {:else}
     function create_else_block_2(ctx) {
     	let p;
 
@@ -4232,7 +4232,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "You must opt in to continue. If you're not paying, you're the product.";
-    			add_location(p, file$7, 142, 16, 3600);
+    			add_location(p, file$7, 138, 16, 3582);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -4246,14 +4246,14 @@ var app = (function () {
     		block,
     		id: create_else_block_2.name,
     		type: "else",
-    		source: "(142:12) {:else}",
+    		source: "(138:12) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (140:12) {#if yes}
+    // (136:12) {#if yes}
     function create_if_block_5$1(ctx) {
     	let p;
 
@@ -4261,7 +4261,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Thank you. We will bombard your inbox and sell your personal details.";
-    			add_location(p, file$7, 140, 16, 3487);
+    			add_location(p, file$7, 136, 16, 3469);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -4275,14 +4275,14 @@ var app = (function () {
     		block,
     		id: create_if_block_5$1.name,
     		type: "if",
-    		source: "(140:12) {#if yes}",
+    		source: "(136:12) {#if yes}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (171:12) {#each menu as flavour}
+    // (161:12) {#each menu as flavour}
     function create_each_block_4(ctx) {
     	let label;
     	let input;
@@ -4302,8 +4302,8 @@ var app = (function () {
     			input.__value = /*flavour*/ ctx[46];
     			input.value = input.__value;
     			/*$$binding_groups*/ ctx[27][0].push(input);
-    			add_location(input, file$7, 172, 20, 4462);
-    			add_location(label, file$7, 171, 16, 4434);
+    			add_location(input, file$7, 162, 20, 4390);
+    			add_location(label, file$7, 161, 16, 4362);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, label, anchor);
@@ -4334,14 +4334,14 @@ var app = (function () {
     		block,
     		id: create_each_block_4.name,
     		type: "each",
-    		source: "(171:12) {#each menu as flavour}",
+    		source: "(161:12) {#each menu as flavour}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (182:12) {:else}
+    // (171:12) {:else}
     function create_else_block_1(ctx) {
     	let p;
     	let t0;
@@ -4362,7 +4362,7 @@ var app = (function () {
     			t3 = text(t3_value);
     			t4 = text("\n                    of ");
     			t5 = text(t5_value);
-    			add_location(p, file$7, 182, 16, 4854);
+    			add_location(p, file$7, 171, 16, 4769);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -4385,14 +4385,14 @@ var app = (function () {
     		block,
     		id: create_else_block_1.name,
     		type: "else",
-    		source: "(182:12) {:else}",
+    		source: "(171:12) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (180:47) 
+    // (169:47) 
     function create_if_block_4$1(ctx) {
     	let p;
 
@@ -4400,7 +4400,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Can't order more flavours than scoops!";
-    			add_location(p, file$7, 180, 16, 4772);
+    			add_location(p, file$7, 169, 16, 4687);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -4415,14 +4415,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4$1.name,
     		type: "if",
-    		source: "(180:47) ",
+    		source: "(169:47) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (178:12) {#if flavours.length === 0}
+    // (167:12) {#if flavours.length === 0}
     function create_if_block_3$1(ctx) {
     	let p;
 
@@ -4430,7 +4430,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Please select at least one flavour";
-    			add_location(p, file$7, 178, 16, 4666);
+    			add_location(p, file$7, 167, 16, 4581);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -4445,14 +4445,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3$1.name,
     		type: "if",
-    		source: "(178:12) {#if flavours.length === 0}",
+    		source: "(167:12) {#if flavours.length === 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (217:12) {#if files}
+    // (202:12) {#if files}
     function create_if_block_2$1(ctx) {
     	let h4;
     	let t1;
@@ -4477,7 +4477,7 @@ var app = (function () {
 
     			each_1_anchor = empty();
     			attr_dev(h4, "class", "mt-2");
-    			add_location(h4, file$7, 217, 16, 5822);
+    			add_location(h4, file$7, 202, 16, 5709);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -4526,14 +4526,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$1.name,
     		type: "if",
-    		source: "(217:12) {#if files}",
+    		source: "(202:12) {#if files}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (219:16) {#each Array.from(files) as file}
+    // (204:16) {#each Array.from(files) as file}
     function create_each_block_3(ctx) {
     	let p;
     	let t0_value = /*file*/ ctx[52].name + "";
@@ -4550,7 +4550,7 @@ var app = (function () {
     			t1 = text(" (");
     			t2 = text(t2_value);
     			t3 = text(" bytes) ");
-    			add_location(p, file$7, 219, 20, 5930);
+    			add_location(p, file$7, 204, 20, 5817);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -4572,14 +4572,14 @@ var app = (function () {
     		block,
     		id: create_each_block_3.name,
     		type: "each",
-    		source: "(219:16) {#each Array.from(files) as file}",
+    		source: "(204:16) {#each Array.from(files) as file}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (230:20) {#each questions as question}
+    // (213:20) {#each questions as question}
     function create_each_block_2$1(ctx) {
     	let option;
     	let t0_value = /*question*/ ctx[49].text + "";
@@ -4593,7 +4593,7 @@ var app = (function () {
     			t1 = space();
     			option.__value = /*question*/ ctx[49];
     			option.value = option.__value;
-    			add_location(option, file$7, 230, 24, 6333);
+    			add_location(option, file$7, 213, 24, 6206);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
@@ -4610,14 +4610,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2$1.name,
     		type: "each",
-    		source: "(230:20) {#each questions as question}",
+    		source: "(213:20) {#each questions as question}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (263:16) {#each menu2 as flavour}
+    // (243:16) {#each menu2 as flavour}
     function create_each_block_1$1(ctx) {
     	let option;
     	let t0_value = /*flavour*/ ctx[46] + "";
@@ -4631,7 +4631,7 @@ var app = (function () {
     			t1 = space();
     			option.__value = /*flavour*/ ctx[46];
     			option.value = option.__value;
-    			add_location(option, file$7, 263, 20, 7356);
+    			add_location(option, file$7, 243, 20, 7202);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
@@ -4648,14 +4648,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1$1.name,
     		type: "each",
-    		source: "(263:16) {#each menu2 as flavour}",
+    		source: "(243:16) {#each menu2 as flavour}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (274:12) {:else}
+    // (253:12) {:else}
     function create_else_block(ctx) {
     	let p;
     	let t0;
@@ -4676,7 +4676,7 @@ var app = (function () {
     			t3 = text(t3_value);
     			t4 = text("\n                    of ");
     			t5 = text(t5_value);
-    			add_location(p, file$7, 274, 16, 7751);
+    			add_location(p, file$7, 253, 16, 7584);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -4701,14 +4701,14 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(274:12) {:else}",
+    		source: "(253:12) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (272:49) 
+    // (251:49) 
     function create_if_block_1$1(ctx) {
     	let p;
 
@@ -4716,7 +4716,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Can't order more flavours than scoops!";
-    			add_location(p, file$7, 272, 16, 7669);
+    			add_location(p, file$7, 251, 16, 7502);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -4731,14 +4731,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$1.name,
     		type: "if",
-    		source: "(272:49) ",
+    		source: "(251:49) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (270:12) {#if flavours2.length === 0}
+    // (249:12) {#if flavours2.length === 0}
     function create_if_block$2(ctx) {
     	let p;
 
@@ -4746,7 +4746,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Please select at least one flavour";
-    			add_location(p, file$7, 270, 16, 7561);
+    			add_location(p, file$7, 249, 16, 7394);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -4761,14 +4761,14 @@ var app = (function () {
     		block,
     		id: create_if_block$2.name,
     		type: "if",
-    		source: "(270:12) {#if flavours2.length === 0}",
+    		source: "(249:12) {#if flavours2.length === 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (285:12) {#each todos_bind as todo_bind}
+    // (262:12) {#each todos_bind as todo_bind}
     function create_each_block$2(ctx) {
     	let div;
     	let input0;
@@ -4793,11 +4793,11 @@ var app = (function () {
     			t = space();
     			input1 = element("input");
     			attr_dev(input0, "type", "checkbox");
-    			add_location(input0, file$7, 286, 20, 8082);
+    			add_location(input0, file$7, 263, 20, 7913);
     			attr_dev(input1, "placeholder", "What needs to be done?");
     			input1.disabled = input1_disabled_value = /*todo_bind*/ ctx[43].done_bind;
-    			add_location(input1, file$7, 291, 20, 8241);
-    			add_location(div, file$7, 285, 16, 8056);
+    			add_location(input1, file$7, 267, 20, 8059);
+    			add_location(div, file$7, 262, 16, 7887);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -4842,7 +4842,7 @@ var app = (function () {
     		block,
     		id: create_each_block$2.name,
     		type: "each",
-    		source: "(285:12) {#each todos_bind as todo_bind}",
+    		source: "(262:12) {#each todos_bind as todo_bind}",
     		ctx
     	});
 
@@ -5201,141 +5201,141 @@ var app = (function () {
     			div10 = element("div");
     			div10.textContent = "TOP";
     			attr_dev(h2, "class", "h3 mb-3 title");
-    			add_location(h2, file$7, 110, 1, 2396);
+    			add_location(h2, file$7, 108, 1, 2380);
     			attr_dev(p0, "class", "sub-title");
-    			add_location(p0, file$7, 113, 3, 2496);
+    			add_location(p0, file$7, 111, 3, 2480);
     			attr_dev(input0, "placeholder", "enter your name");
-    			add_location(input0, file$7, 114, 12, 2545);
-    			add_location(p1, file$7, 115, 12, 2613);
+    			add_location(input0, file$7, 112, 12, 2529);
+    			add_location(p1, file$7, 113, 12, 2597);
     			attr_dev(div0, "class", "sampleli");
-    			add_location(div0, file$7, 112, 2, 2470);
+    			add_location(div0, file$7, 110, 2, 2454);
     			attr_dev(p2, "class", "sub-title");
-    			add_location(p2, file$7, 120, 16, 2737);
+    			add_location(p2, file$7, 117, 16, 2720);
     			attr_dev(input1, "type", "nubmber");
     			attr_dev(input1, "min", "0");
     			attr_dev(input1, "max", "10");
-    			add_location(input1, file$7, 122, 20, 2821);
+    			add_location(input1, file$7, 119, 20, 2804);
     			attr_dev(input2, "type", "range");
     			attr_dev(input2, "min", "0");
     			attr_dev(input2, "max", "10");
-    			add_location(input2, file$7, 123, 20, 2892);
-    			add_location(label0, file$7, 121, 16, 2793);
+    			add_location(input2, file$7, 120, 20, 2875);
+    			add_location(label0, file$7, 118, 16, 2776);
     			attr_dev(input3, "type", "nubmber");
     			attr_dev(input3, "min", "0");
     			attr_dev(input3, "max", "10");
-    			add_location(input3, file$7, 126, 20, 3010);
+    			add_location(input3, file$7, 123, 20, 2993);
     			attr_dev(input4, "type", "range");
     			attr_dev(input4, "min", "0");
     			attr_dev(input4, "max", "10");
-    			add_location(input4, file$7, 127, 20, 3081);
-    			add_location(label1, file$7, 125, 16, 2982);
-    			add_location(p3, file$7, 129, 16, 3171);
+    			add_location(input4, file$7, 124, 20, 3064);
+    			add_location(label1, file$7, 122, 16, 2965);
+    			add_location(p3, file$7, 126, 16, 3154);
     			attr_dev(div1, "class", "sampleli");
-    			add_location(div1, file$7, 119, 12, 2698);
+    			add_location(div1, file$7, 116, 12, 2681);
     			attr_dev(div2, "class", "samplelist");
-    			add_location(div2, file$7, 118, 8, 2661);
+    			add_location(div2, file$7, 115, 8, 2644);
     			attr_dev(p4, "class", "sub-title");
-    			add_location(p4, file$7, 134, 3, 3262);
+    			add_location(p4, file$7, 130, 3, 3244);
     			attr_dev(input5, "type", "checkbox");
-    			add_location(input5, file$7, 136, 16, 3339);
-    			add_location(label2, file$7, 135, 12, 3315);
+    			add_location(input5, file$7, 132, 16, 3321);
+    			add_location(label2, file$7, 131, 12, 3297);
     			button0.disabled = button0_disabled_value = !/*yes*/ ctx[5];
-    			add_location(button0, file$7, 144, 12, 3708);
+    			add_location(button0, file$7, 140, 12, 3690);
     			attr_dev(div3, "class", "sampleli");
-    			add_location(div3, file$7, 133, 2, 3236);
+    			add_location(div3, file$7, 129, 2, 3218);
     			attr_dev(p5, "class", "sub-title");
-    			add_location(p5, file$7, 150, 3, 3819);
-    			add_location(h40, file$7, 151, 12, 3869);
+    			add_location(p5, file$7, 145, 3, 3800);
+    			add_location(h40, file$7, 146, 12, 3850);
     			attr_dev(input6, "type", "radio");
     			input6.__value = 1;
     			input6.value = input6.__value;
     			/*$$binding_groups*/ ctx[27][1].push(input6);
-    			add_location(input6, file$7, 154, 16, 3920);
-    			add_location(label3, file$7, 153, 12, 3896);
+    			add_location(input6, file$7, 148, 16, 3900);
+    			add_location(label3, file$7, 147, 12, 3876);
     			attr_dev(input7, "type", "radio");
     			input7.__value = 2;
     			input7.value = input7.__value;
     			/*$$binding_groups*/ ctx[27][1].push(input7);
-    			add_location(input7, file$7, 159, 16, 4066);
-    			add_location(label4, file$7, 158, 12, 4042);
+    			add_location(input7, file$7, 152, 16, 4033);
+    			add_location(label4, file$7, 151, 12, 4009);
     			attr_dev(input8, "type", "radio");
     			input8.__value = 3;
     			input8.value = input8.__value;
     			/*$$binding_groups*/ ctx[27][1].push(input8);
-    			add_location(input8, file$7, 164, 16, 4213);
-    			add_location(label5, file$7, 163, 12, 4189);
+    			add_location(input8, file$7, 156, 16, 4167);
+    			add_location(label5, file$7, 155, 12, 4143);
     			attr_dev(h41, "class", "mt-2");
-    			add_location(h41, file$7, 168, 12, 4338);
+    			add_location(h41, file$7, 159, 12, 4279);
     			attr_dev(div4, "class", "sampleli");
-    			add_location(div4, file$7, 149, 2, 3793);
+    			add_location(div4, file$7, 144, 2, 3774);
     			attr_dev(p6, "class", "sub-title");
-    			add_location(p6, file$7, 198, 3, 5254);
+    			add_location(p6, file$7, 185, 3, 5167);
     			attr_dev(label6, "for", "avatar");
-    			add_location(label6, file$7, 199, 12, 5303);
+    			add_location(label6, file$7, 186, 12, 5216);
     			attr_dev(input9, "accept", "image/png, image/jpeg");
     			attr_dev(input9, "id", "avatar");
     			attr_dev(input9, "name", "avatar");
     			attr_dev(input9, "type", "file");
-    			add_location(input9, file$7, 200, 12, 5361);
+    			add_location(input9, file$7, 187, 12, 5274);
     			attr_dev(label7, "for", "many");
-    			add_location(label7, file$7, 208, 12, 5568);
+    			add_location(label7, file$7, 194, 12, 5468);
     			attr_dev(input10, "id", "many");
     			input10.multiple = true;
     			attr_dev(input10, "type", "file");
-    			add_location(input10, file$7, 209, 12, 5641);
+    			add_location(input10, file$7, 195, 12, 5541);
     			attr_dev(div5, "class", "sampleli");
-    			add_location(div5, file$7, 197, 2, 5228);
+    			add_location(div5, file$7, 184, 2, 5141);
     			attr_dev(p7, "class", "sub-title");
-    			add_location(p7, file$7, 226, 3, 6075);
+    			add_location(p7, file$7, 209, 3, 5948);
     			if (/*selected*/ ctx[7] === void 0) add_render_callback(() => /*select0_change_handler*/ ctx[33].call(select0));
-    			add_location(select0, file$7, 228, 16, 6196);
-    			add_location(input11, file$7, 235, 16, 6507);
+    			add_location(select0, file$7, 211, 16, 6069);
+    			add_location(input11, file$7, 218, 16, 6380);
     			button1.disabled = button1_disabled_value = !/*answer*/ ctx[8];
     			attr_dev(button1, "type", "submit");
-    			add_location(button1, file$7, 236, 16, 6551);
-    			add_location(form, file$7, 227, 12, 6133);
+    			add_location(button1, file$7, 219, 16, 6424);
+    			add_location(form, file$7, 210, 12, 6006);
     			attr_dev(div6, "class", "sampleli");
-    			add_location(div6, file$7, 225, 8, 6049);
+    			add_location(div6, file$7, 208, 8, 5922);
     			attr_dev(p8, "class", "sub-title");
-    			add_location(p8, file$7, 243, 3, 6714);
+    			add_location(p8, file$7, 225, 3, 6586);
     			attr_dev(input12, "type", "radio");
     			input12.__value = 1;
     			input12.value = input12.__value;
     			/*$$binding_groups*/ ctx[27][1].push(input12);
-    			add_location(input12, file$7, 245, 16, 6780);
-    			add_location(label8, file$7, 244, 12, 6756);
+    			add_location(input12, file$7, 227, 16, 6652);
+    			add_location(label8, file$7, 226, 12, 6628);
     			attr_dev(input13, "type", "radio");
     			input13.__value = 2;
     			input13.value = input13.__value;
     			/*$$binding_groups*/ ctx[27][1].push(input13);
-    			add_location(input13, file$7, 250, 16, 6926);
-    			add_location(label9, file$7, 249, 12, 6902);
+    			add_location(input13, file$7, 232, 16, 6798);
+    			add_location(label9, file$7, 231, 12, 6774);
     			attr_dev(input14, "type", "radio");
     			input14.__value = 3;
     			input14.value = input14.__value;
     			/*$$binding_groups*/ ctx[27][1].push(input14);
-    			add_location(input14, file$7, 255, 16, 7073);
-    			add_location(label10, file$7, 254, 12, 7049);
+    			add_location(input14, file$7, 237, 16, 6945);
+    			add_location(label10, file$7, 236, 12, 6921);
     			attr_dev(h42, "class", "mt-2");
-    			add_location(h42, file$7, 259, 12, 7198);
+    			add_location(h42, file$7, 240, 12, 7057);
     			select1.multiple = true;
     			if (/*flavours2*/ ctx[10] === void 0) add_render_callback(() => /*select1_change_handler*/ ctx[39].call(select1));
-    			add_location(select1, file$7, 261, 12, 7254);
+    			add_location(select1, file$7, 241, 12, 7100);
     			attr_dev(div7, "class", "sampleli");
-    			add_location(div7, file$7, 242, 8, 6688);
+    			add_location(div7, file$7, 224, 8, 6560);
     			attr_dev(p9, "class", "sub-title");
-    			add_location(p9, file$7, 282, 3, 7964);
-    			add_location(p10, file$7, 299, 12, 8511);
-    			add_location(button2, file$7, 301, 12, 8570);
-    			add_location(button3, file$7, 305, 12, 8670);
+    			add_location(p9, file$7, 260, 3, 7796);
+    			add_location(p10, file$7, 274, 12, 8316);
+    			add_location(button2, file$7, 275, 12, 8362);
+    			add_location(button3, file$7, 278, 12, 8449);
     			attr_dev(div8, "class", "sampleli");
-    			add_location(div8, file$7, 281, 8, 7938);
+    			add_location(div8, file$7, 259, 8, 7770);
     			attr_dev(div9, "class", "samplelist");
-    			add_location(div9, file$7, 111, 1, 2443);
+    			add_location(div9, file$7, 109, 1, 2427);
     			attr_dev(div10, "class", "pointer");
-    			add_location(div10, file$7, 311, 1, 8783);
+    			add_location(div10, file$7, 283, 1, 8561);
     			attr_dev(div11, "class", "container");
-    			add_location(div11, file$7, 109, 0, 2371);
+    			add_location(div11, file$7, 107, 0, 2355);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -6234,36 +6234,36 @@ var app = (function () {
     			div6 = element("div");
     			div6.textContent = "TOP";
     			attr_dev(h2, "class", "h3 mb-3 title");
-    			add_location(h2, file$6, 73, 1, 1311);
+    			add_location(h2, file$6, 69, 1, 1292);
     			attr_dev(p0, "class", "sub-title");
-    			add_location(p0, file$6, 76, 3, 1409);
+    			add_location(p0, file$6, 72, 3, 1390);
     			attr_dev(div0, "class", "sampleli");
-    			add_location(div0, file$6, 75, 2, 1383);
-    			add_location(h10, file$6, 78, 2, 1461);
+    			add_location(div0, file$6, 71, 2, 1364);
+    			add_location(h10, file$6, 74, 2, 1442);
     			attr_dev(div1, "class", "samplelist");
-    			add_location(div1, file$6, 74, 1, 1356);
+    			add_location(div1, file$6, 70, 1, 1337);
     			attr_dev(p1, "class", "sub-title");
-    			add_location(p1, file$6, 82, 3, 1570);
+    			add_location(p1, file$6, 78, 3, 1551);
     			attr_dev(div2, "class", "sampleli");
-    			add_location(div2, file$6, 81, 2, 1544);
-    			add_location(h11, file$6, 84, 2, 1621);
-    			add_location(p2, file$6, 85, 2, 1672);
+    			add_location(div2, file$6, 77, 2, 1525);
+    			add_location(h11, file$6, 80, 2, 1602);
+    			add_location(p2, file$6, 81, 2, 1653);
     			attr_dev(div3, "class", "samplelist");
-    			add_location(div3, file$6, 80, 1, 1517);
+    			add_location(div3, file$6, 76, 1, 1498);
     			attr_dev(p3, "class", "sub-title");
-    			add_location(p3, file$6, 92, 3, 1832);
+    			add_location(p3, file$6, 88, 3, 1813);
     			attr_dev(div4, "class", "sampleli");
-    			add_location(div4, file$6, 91, 2, 1806);
-    			add_location(h12, file$6, 94, 2, 1882);
-    			add_location(button0, file$6, 95, 2, 1915);
-    			add_location(button1, file$6, 96, 2, 1963);
-    			add_location(button2, file$6, 97, 2, 2011);
+    			add_location(div4, file$6, 87, 2, 1787);
+    			add_location(h12, file$6, 90, 2, 1863);
+    			add_location(button0, file$6, 91, 2, 1896);
+    			add_location(button1, file$6, 92, 2, 1944);
+    			add_location(button2, file$6, 93, 2, 1992);
     			attr_dev(div5, "class", "samplelist");
-    			add_location(div5, file$6, 90, 1, 1779);
+    			add_location(div5, file$6, 86, 1, 1760);
     			attr_dev(div6, "class", "pointer");
-    			add_location(div6, file$6, 99, 1, 2066);
+    			add_location(div6, file$6, 95, 1, 2047);
     			attr_dev(div7, "class", "container");
-    			add_location(div7, file$6, 72, 0, 1286);
+    			add_location(div7, file$6, 68, 0, 1267);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -6862,59 +6862,59 @@ var app = (function () {
     			div6 = element("div");
     			div6.textContent = "TOP";
     			attr_dev(h2, "class", "h3 mb-3 title");
-    			add_location(h2, file$5, 26, 1, 419);
+    			add_location(h2, file$5, 24, 1, 403);
     			attr_dev(p0, "class", "sub-title");
-    			add_location(p0, file$5, 29, 3, 518);
+    			add_location(p0, file$5, 27, 3, 502);
     			progress_1.value = /*$progress*/ ctx[1];
     			attr_dev(progress_1, "class", "svelte-1ueg7c8");
-    			add_location(progress_1, file$5, 30, 3, 554);
-    			add_location(button0, file$5, 31, 3, 597);
-    			add_location(button1, file$5, 32, 3, 655);
-    			add_location(button2, file$5, 33, 3, 717);
-    			add_location(button3, file$5, 34, 3, 778);
-    			add_location(button4, file$5, 35, 3, 840);
+    			add_location(progress_1, file$5, 28, 3, 538);
+    			add_location(button0, file$5, 29, 3, 581);
+    			add_location(button1, file$5, 30, 3, 639);
+    			add_location(button2, file$5, 31, 3, 701);
+    			add_location(button3, file$5, 32, 3, 762);
+    			add_location(button4, file$5, 33, 3, 824);
     			attr_dev(div0, "class", "sampleli");
-    			add_location(div0, file$5, 28, 2, 492);
+    			add_location(div0, file$5, 26, 2, 476);
     			attr_dev(div1, "class", "samplelist");
-    			add_location(div1, file$5, 27, 1, 465);
+    			add_location(div1, file$5, 25, 1, 449);
     			attr_dev(p1, "class", "sub-title");
-    			add_location(p1, file$5, 40, 3, 968);
-    			add_location(h30, file$5, 44, 6, 1143);
+    			add_location(p1, file$5, 38, 3, 952);
+    			add_location(h30, file$5, 42, 6, 1127);
     			attr_dev(input0, "type", "range");
     			attr_dev(input0, "min", "0");
     			attr_dev(input0, "max", "1");
     			attr_dev(input0, "step", "0.01");
-    			add_location(input0, file$5, 45, 6, 1189);
-    			add_location(label0, file$5, 43, 5, 1129);
-    			add_location(h31, file$5, 49, 6, 1306);
+    			add_location(input0, file$5, 43, 6, 1173);
+    			add_location(label0, file$5, 41, 5, 1113);
+    			add_location(h31, file$5, 47, 6, 1290);
     			attr_dev(input1, "type", "range");
     			attr_dev(input1, "min", "0");
     			attr_dev(input1, "max", "1");
     			attr_dev(input1, "step", "0.01");
-    			add_location(input1, file$5, 50, 6, 1348);
-    			add_location(label1, file$5, 48, 5, 1292);
+    			add_location(input1, file$5, 48, 6, 1332);
+    			add_location(label1, file$5, 46, 5, 1276);
     			set_style(div2, "position", "absolute");
     			set_style(div2, "right", "1em");
     			set_style(div2, "top", "1rem");
-    			add_location(div2, file$5, 42, 4, 1067);
+    			add_location(div2, file$5, 40, 4, 1051);
     			attr_dev(circle, "cx", circle_cx_value = /*$coords*/ ctx[2].x);
     			attr_dev(circle, "cy", circle_cy_value = /*$coords*/ ctx[2].y);
     			attr_dev(circle, "r", /*$size*/ ctx[3]);
     			attr_dev(circle, "class", "svelte-1ueg7c8");
-    			add_location(circle, file$5, 58, 5, 1620);
+    			add_location(circle, file$5, 56, 5, 1604);
     			attr_dev(svg, "class", "svelte-1ueg7c8");
-    			add_location(svg, file$5, 53, 4, 1454);
+    			add_location(svg, file$5, 51, 4, 1438);
     			set_style(div3, "border", "2px solid #FF3F00");
     			set_style(div3, "position", "relative");
-    			add_location(div3, file$5, 41, 3, 1003);
+    			add_location(div3, file$5, 39, 3, 987);
     			attr_dev(div4, "class", "sampleli");
-    			add_location(div4, file$5, 39, 2, 942);
+    			add_location(div4, file$5, 37, 2, 926);
     			attr_dev(div5, "class", "samplelist");
-    			add_location(div5, file$5, 38, 1, 915);
+    			add_location(div5, file$5, 36, 1, 899);
     			attr_dev(div6, "class", "pointer");
-    			add_location(div6, file$5, 63, 1, 1709);
+    			add_location(div6, file$5, 61, 1, 1693);
     			attr_dev(div7, "class", "container");
-    			add_location(div7, file$5, 25, 0, 394);
+    			add_location(div7, file$5, 23, 0, 378);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -7190,7 +7190,7 @@ var app = (function () {
     const { Error: Error_1 } = globals;
     const file$4 = "src/components/SampleTrantitions.svelte";
 
-    // (88:3) {#if visible}
+    // (81:3) {#if visible}
     function create_if_block_5(ctx) {
     	let p;
     	let p_transition;
@@ -7200,7 +7200,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Fades in and out";
-    			add_location(p, file$4, 88, 4, 1639);
+    			add_location(p, file$4, 81, 4, 1615);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -7231,14 +7231,14 @@ var app = (function () {
     		block,
     		id: create_if_block_5.name,
     		type: "if",
-    		source: "(88:3) {#if visible}",
+    		source: "(81:3) {#if visible}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (101:3) {#if add_visible}
+    // (93:3) {#if add_visible}
     function create_if_block_4(ctx) {
     	let p;
     	let p_transition;
@@ -7248,7 +7248,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Fades in and out";
-    			add_location(p, file$4, 101, 4, 1898);
+    			add_location(p, file$4, 93, 4, 1870);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -7279,14 +7279,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4.name,
     		type: "if",
-    		source: "(101:3) {#if add_visible}",
+    		source: "(93:3) {#if add_visible}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (115:3) {#if inout_visible}
+    // (105:3) {#if inout_visible}
     function create_if_block_3(ctx) {
     	let p;
     	let p_intro;
@@ -7297,7 +7297,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Flies in, fades out";
-    			add_location(p, file$4, 115, 4, 2183);
+    			add_location(p, file$4, 105, 4, 2150);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -7329,14 +7329,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(115:3) {#if inout_visible}",
+    		source: "(105:3) {#if inout_visible}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (129:4) {#if visible}
+    // (118:4) {#if visible}
     function create_if_block_2(ctx) {
     	let div;
     	let span;
@@ -7350,9 +7350,9 @@ var app = (function () {
     			span = element("span");
     			span.textContent = "transitions!";
     			attr_dev(span, "class", "svelte-ib4mco");
-    			add_location(span, file$4, 130, 5, 2607);
+    			add_location(span, file$4, 119, 5, 2573);
     			attr_dev(div, "class", "centered svelte-ib4mco");
-    			add_location(div, file$4, 129, 4, 2541);
+    			add_location(div, file$4, 118, 4, 2507);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -7385,14 +7385,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(129:4) {#if visible}",
+    		source: "(118:4) {#if visible}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (144:4) {#if js_visible}
+    // (132:4) {#if js_visible}
     function create_if_block_1(ctx) {
     	let p;
     	let p_intro;
@@ -7401,7 +7401,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "The quick brown fox jumps over the lazy dog";
-    			add_location(p, file$4, 144, 4, 2925);
+    			add_location(p, file$4, 132, 4, 2890);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -7424,14 +7424,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(144:4) {#if js_visible}",
+    		source: "(132:4) {#if js_visible}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (159:3) {#if visible}
+    // (146:3) {#if visible}
     function create_if_block$1(ctx) {
     	let p;
     	let p_transition;
@@ -7443,7 +7443,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Flies in and out";
-    			add_location(p, file$4, 159, 4, 3270);
+    			add_location(p, file$4, 146, 4, 3234);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -7488,7 +7488,7 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(159:3) {#if visible}",
+    		source: "(146:3) {#if visible}",
     		ctx
     	});
 
@@ -7641,63 +7641,63 @@ var app = (function () {
     			div9 = element("div");
     			div9.textContent = "TOP";
     			attr_dev(h2, "class", "h3 mb-3 title");
-    			add_location(h2, file$4, 78, 1, 1374);
+    			add_location(h2, file$4, 72, 1, 1354);
     			attr_dev(p0, "class", "sub-title");
-    			add_location(p0, file$4, 81, 3, 1478);
+    			add_location(p0, file$4, 75, 3, 1458);
     			attr_dev(input0, "type", "checkbox");
-    			add_location(input0, file$4, 83, 4, 1543);
-    			add_location(label0, file$4, 82, 3, 1531);
+    			add_location(input0, file$4, 77, 4, 1523);
+    			add_location(label0, file$4, 76, 3, 1511);
     			attr_dev(div0, "class", "sampleli");
-    			add_location(div0, file$4, 80, 2, 1452);
+    			add_location(div0, file$4, 74, 2, 1432);
     			attr_dev(p1, "class", "sub-title");
-    			add_location(p1, file$4, 94, 3, 1736);
+    			add_location(p1, file$4, 87, 3, 1712);
     			attr_dev(input1, "type", "checkbox");
-    			add_location(input1, file$4, 96, 4, 1794);
-    			add_location(label1, file$4, 95, 3, 1782);
+    			add_location(input1, file$4, 89, 4, 1770);
+    			add_location(label1, file$4, 88, 3, 1758);
     			attr_dev(div1, "class", "sampleli");
-    			add_location(div1, file$4, 93, 2, 1710);
+    			add_location(div1, file$4, 86, 2, 1686);
     			attr_dev(p2, "class", "sub-title");
-    			add_location(p2, file$4, 108, 3, 2024);
+    			add_location(p2, file$4, 99, 3, 1995);
     			attr_dev(input2, "type", "checkbox");
-    			add_location(input2, file$4, 110, 4, 2075);
-    			add_location(label2, file$4, 109, 3, 2063);
+    			add_location(input2, file$4, 101, 4, 2046);
+    			add_location(label2, file$4, 100, 3, 2034);
     			attr_dev(div2, "class", "sampleli");
-    			add_location(div2, file$4, 107, 2, 1998);
+    			add_location(div2, file$4, 98, 2, 1969);
     			attr_dev(p3, "class", "sub-title");
-    			add_location(p3, file$4, 122, 3, 2343);
+    			add_location(p3, file$4, 111, 3, 2309);
     			attr_dev(input3, "type", "checkbox");
-    			add_location(input3, file$4, 124, 4, 2406);
-    			add_location(label3, file$4, 123, 3, 2394);
+    			add_location(input3, file$4, 113, 4, 2372);
+    			add_location(label3, file$4, 112, 3, 2360);
     			attr_dev(div3, "class", "centered_content css svelte-ib4mco");
-    			add_location(div3, file$4, 127, 3, 2484);
+    			add_location(div3, file$4, 116, 3, 2450);
     			attr_dev(div4, "class", "sampleli");
     			set_style(div4, "position", "relative");
-    			add_location(div4, file$4, 121, 2, 2289);
+    			add_location(div4, file$4, 110, 2, 2255);
     			attr_dev(p4, "class", "sub-title");
-    			add_location(p4, file$4, 137, 3, 2730);
+    			add_location(p4, file$4, 125, 3, 2695);
     			attr_dev(input4, "type", "checkbox");
-    			add_location(input4, file$4, 139, 4, 2792);
-    			add_location(label4, file$4, 138, 3, 2780);
+    			add_location(input4, file$4, 127, 4, 2757);
+    			add_location(label4, file$4, 126, 3, 2745);
     			attr_dev(div5, "class", "centered_content");
-    			add_location(div5, file$4, 142, 3, 2869);
+    			add_location(div5, file$4, 130, 3, 2834);
     			attr_dev(div6, "class", "sampleli");
     			set_style(div6, "position", "relative");
-    			add_location(div6, file$4, 136, 2, 2676);
+    			add_location(div6, file$4, 124, 2, 2641);
     			attr_dev(p5, "class", "sub-title");
-    			add_location(p5, file$4, 152, 3, 3087);
-    			add_location(p6, file$4, 153, 3, 3133);
+    			add_location(p5, file$4, 139, 3, 3051);
+    			add_location(p6, file$4, 140, 3, 3097);
     			attr_dev(input5, "type", "checkbox");
-    			add_location(input5, file$4, 155, 4, 3172);
-    			add_location(label5, file$4, 154, 3, 3160);
+    			add_location(input5, file$4, 142, 4, 3136);
+    			add_location(label5, file$4, 141, 3, 3124);
     			attr_dev(div7, "class", "sampleli");
     			set_style(div7, "position", "relative");
-    			add_location(div7, file$4, 151, 2, 3033);
+    			add_location(div7, file$4, 138, 2, 2997);
     			attr_dev(div8, "class", "samplelist");
-    			add_location(div8, file$4, 79, 1, 1425);
+    			add_location(div8, file$4, 73, 1, 1405);
     			attr_dev(div9, "class", "pointer");
-    			add_location(div9, file$4, 171, 1, 3596);
+    			add_location(div9, file$4, 158, 1, 3560);
     			attr_dev(div10, "class", "container");
-    			add_location(div10, file$4, 77, 0, 1349);
+    			add_location(div10, file$4, 71, 0, 1329);
     		},
     		l: function claim(nodes) {
     			throw new Error_1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -8180,18 +8180,18 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (72:5) {#each [1, 2, 3, 4] as offset}
+    // (70:5) {#each [1, 2, 3, 4] as offset}
     function create_each_block_2(ctx) {
     	let line;
 
     	const block = {
     		c: function create() {
     			line = svg_element("line");
-    			attr_dev(line, "class", "minor svelte-17x41ss");
+    			attr_dev(line, "class", "minor svelte-dx8dgw");
     			attr_dev(line, "y1", "42");
     			attr_dev(line, "y2", "45");
     			attr_dev(line, "transform", "rotate(" + 6 * (/*minute*/ ctx[13] + /*offset*/ ctx[16]) + ")");
-    			add_location(line, file$3, 72, 6, 2505);
+    			add_location(line, file$3, 70, 6, 2489);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, line, anchor);
@@ -8205,14 +8205,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(72:5) {#each [1, 2, 3, 4] as offset}",
+    		source: "(70:5) {#each [1, 2, 3, 4] as offset}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (65:4) {#each [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55] as minute}
+    // (63:4) {#each [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55] as minute}
     function create_each_block_1(ctx) {
     	let line;
     	let each_1_anchor;
@@ -8233,11 +8233,11 @@ var app = (function () {
     			}
 
     			each_1_anchor = empty();
-    			attr_dev(line, "class", "major svelte-17x41ss");
+    			attr_dev(line, "class", "major svelte-dx8dgw");
     			attr_dev(line, "y1", "35");
     			attr_dev(line, "y2", "45");
     			attr_dev(line, "transform", "rotate(" + 30 * /*minute*/ ctx[13] + ")");
-    			add_location(line, file$3, 65, 5, 2361);
+    			add_location(line, file$3, 63, 5, 2345);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, line, anchor);
@@ -8260,14 +8260,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(65:4) {#each [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55] as minute}",
+    		source: "(63:4) {#each [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55] as minute}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (108:3) {#if visible}
+    // (106:3) {#if visible}
     function create_if_block(ctx) {
     	let svg;
     	let g;
@@ -8305,21 +8305,21 @@ var app = (function () {
     			set_style(path0, "fill", "#ff3e00");
     			set_style(path0, "stroke-width", "50");
     			attr_dev(path0, "d", /*outer*/ ctx[2]);
-    			attr_dev(path0, "class", "svelte-17x41ss");
-    			add_location(path0, file$3, 110, 6, 3467);
+    			attr_dev(path0, "class", "svelte-dx8dgw");
+    			add_location(path0, file$3, 108, 6, 3451);
     			set_style(path1, "stroke", "#ff3e00");
     			set_style(path1, "stroke-width", "1.5");
     			attr_dev(path1, "d", /*inner*/ ctx[1]);
-    			attr_dev(path1, "class", "svelte-17x41ss");
-    			add_location(path1, file$3, 115, 6, 3638);
+    			attr_dev(path1, "class", "svelte-dx8dgw");
+    			add_location(path1, file$3, 113, 6, 3622);
     			attr_dev(g, "opacity", "0.2");
-    			add_location(g, file$3, 109, 5, 3416);
-    			attr_dev(svg, "class", "transitions svelte-17x41ss");
+    			add_location(g, file$3, 107, 5, 3400);
+    			attr_dev(svg, "class", "transitions svelte-dx8dgw");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 103 124");
-    			add_location(svg, file$3, 108, 4, 3328);
-    			attr_dev(div, "class", "centered svelte-17x41ss");
-    			add_location(div, file$3, 123, 4, 3784);
+    			add_location(svg, file$3, 106, 4, 3312);
+    			attr_dev(div, "class", "centered svelte-dx8dgw");
+    			add_location(div, file$3, 121, 4, 3768);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, svg, anchor);
@@ -8388,14 +8388,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(108:3) {#if visible}",
+    		source: "(106:3) {#if visible}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (125:5) {#each 'SVELTE' as char, i}
+    // (123:5) {#each 'SVELTE' as char, i}
     function create_each_block$1(ctx) {
     	let span;
     	let t;
@@ -8405,8 +8405,8 @@ var app = (function () {
     		c: function create() {
     			span = element("span");
     			t = text(/*char*/ ctx[10]);
-    			attr_dev(span, "class", "svelte-17x41ss");
-    			add_location(span, file$3, 125, 6, 3882);
+    			attr_dev(span, "class", "svelte-dx8dgw");
+    			add_location(span, file$3, 123, 6, 3866);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -8435,7 +8435,7 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(125:5) {#each 'SVELTE' as char, i}",
+    		source: "(123:5) {#each 'SVELTE' as char, i}",
     		ctx
     	});
 
@@ -8524,55 +8524,55 @@ var app = (function () {
     			t11 = space();
     			link = element("link");
     			attr_dev(h2, "class", "h3 mb-3 title");
-    			add_location(h2, file$3, 57, 1, 2050);
+    			add_location(h2, file$3, 55, 1, 2034);
     			attr_dev(p0, "class", "sub-title");
-    			add_location(p0, file$3, 60, 3, 2146);
-    			attr_dev(circle, "class", "clock-face svelte-17x41ss");
+    			add_location(p0, file$3, 58, 3, 2130);
+    			attr_dev(circle, "class", "clock-face svelte-dx8dgw");
     			attr_dev(circle, "r", "48");
-    			add_location(circle, file$3, 62, 4, 2230);
-    			attr_dev(line0, "class", "hour svelte-17x41ss");
+    			add_location(circle, file$3, 60, 4, 2214);
+    			attr_dev(line0, "class", "hour svelte-dx8dgw");
     			attr_dev(line0, "y1", "2");
     			attr_dev(line0, "y2", "-20");
     			attr_dev(line0, "transform", line0_transform_value = "rotate(" + (30 * /*hours*/ ctx[6] + /*minutes*/ ctx[5] / 2) + ")");
-    			add_location(line0, file$3, 81, 4, 2674);
-    			attr_dev(line1, "class", "minute svelte-17x41ss");
+    			add_location(line0, file$3, 79, 4, 2658);
+    			attr_dev(line1, "class", "minute svelte-dx8dgw");
     			attr_dev(line1, "y1", "4");
     			attr_dev(line1, "y2", "-30");
     			attr_dev(line1, "transform", line1_transform_value = "rotate(" + (6 * /*minutes*/ ctx[5] + /*seconds*/ ctx[4] / 10) + ")");
-    			add_location(line1, file$3, 88, 4, 2812);
-    			attr_dev(line2, "class", "second svelte-17x41ss");
+    			add_location(line1, file$3, 86, 4, 2796);
+    			attr_dev(line2, "class", "second svelte-dx8dgw");
     			attr_dev(line2, "y1", "10");
     			attr_dev(line2, "y2", "-38");
-    			add_location(line2, file$3, 96, 5, 2997);
-    			attr_dev(line3, "class", "second-counterweight svelte-17x41ss");
+    			add_location(line2, file$3, 94, 5, 2981);
+    			attr_dev(line3, "class", "second-counterweight svelte-dx8dgw");
     			attr_dev(line3, "y1", "10");
     			attr_dev(line3, "y2", "2");
-    			add_location(line3, file$3, 97, 5, 3042);
+    			add_location(line3, file$3, 95, 5, 3026);
     			attr_dev(g, "transform", g_transform_value = "rotate(" + 6 * /*seconds*/ ctx[4] + ")");
-    			add_location(g, file$3, 95, 4, 2954);
-    			attr_dev(svg, "class", "clock svelte-17x41ss");
+    			add_location(g, file$3, 93, 4, 2938);
+    			attr_dev(svg, "class", "clock svelte-dx8dgw");
     			attr_dev(svg, "viewBox", "-50 -50 100 100");
-    			add_location(svg, file$3, 61, 3, 2180);
+    			add_location(svg, file$3, 59, 3, 2164);
     			attr_dev(div0, "class", "sampleli");
-    			add_location(div0, file$3, 59, 2, 2120);
+    			add_location(div0, file$3, 57, 2, 2104);
     			attr_dev(p1, "class", "sub-title");
-    			add_location(p1, file$3, 102, 3, 3178);
+    			add_location(p1, file$3, 100, 3, 3162);
     			attr_dev(input, "type", "checkbox");
-    			add_location(input, file$3, 104, 4, 3234);
-    			attr_dev(label, "class", "svelte-17x41ss");
-    			add_location(label, file$3, 103, 3, 3222);
+    			add_location(input, file$3, 102, 4, 3218);
+    			attr_dev(label, "class", "svelte-dx8dgw");
+    			add_location(label, file$3, 101, 3, 3206);
     			attr_dev(div1, "class", "sampleli");
     			set_style(div1, "position", "relative");
-    			add_location(div1, file$3, 101, 2, 3124);
+    			add_location(div1, file$3, 99, 2, 3108);
     			attr_dev(div2, "class", "samplelist");
-    			add_location(div2, file$3, 58, 1, 2093);
+    			add_location(div2, file$3, 56, 1, 2077);
     			attr_dev(div3, "class", "pointer");
-    			add_location(div3, file$3, 133, 1, 4018);
+    			add_location(div3, file$3, 131, 1, 4002);
     			attr_dev(div4, "class", "container");
-    			add_location(div4, file$3, 56, 0, 2025);
+    			add_location(div4, file$3, 54, 0, 2009);
     			attr_dev(link, "href", "https://fonts.googleapis.com/css?family=Overpass:100,400");
     			attr_dev(link, "rel", "stylesheet");
-    			add_location(link, file$3, 135, 0, 4083);
+    			add_location(link, file$3, 133, 0, 4067);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -8909,36 +8909,36 @@ var app = (function () {
     			div4 = element("div");
     			div4.textContent = "TOP";
     			attr_dev(h2, "class", "h3 mb-3 title");
-    			add_location(h2, file$2, 17, 4, 238);
+    			add_location(h2, file$2, 15, 4, 222);
     			attr_dev(p0, "class", "sub-title");
-    			add_location(p0, file$2, 20, 12, 356);
-    			attr_dev(button0, "class", "svelte-1heiqtr");
+    			add_location(p0, file$2, 18, 12, 340);
+    			attr_dev(button0, "class", "svelte-16xte9h");
     			toggle_class(button0, "active", /*current*/ ctx[0] === 'foo');
-    			add_location(button0, file$2, 21, 12, 413);
-    			attr_dev(button1, "class", "svelte-1heiqtr");
+    			add_location(button0, file$2, 19, 12, 397);
+    			attr_dev(button1, "class", "svelte-16xte9h");
     			toggle_class(button1, "active", /*current*/ ctx[0] === 'bar');
-    			add_location(button1, file$2, 27, 12, 591);
-    			attr_dev(button2, "class", "svelte-1heiqtr");
+    			add_location(button1, file$2, 25, 12, 575);
+    			attr_dev(button2, "class", "svelte-16xte9h");
     			toggle_class(button2, "active", /*current*/ ctx[0] === 'baz');
-    			add_location(button2, file$2, 33, 12, 769);
+    			add_location(button2, file$2, 31, 12, 753);
     			attr_dev(div0, "class", "sampleli");
-    			add_location(div0, file$2, 19, 8, 321);
+    			add_location(div0, file$2, 17, 8, 305);
     			attr_dev(p1, "class", "sub-title");
-    			add_location(p1, file$2, 41, 12, 993);
+    			add_location(p1, file$2, 39, 12, 977);
     			attr_dev(input, "type", "checkbox");
-    			add_location(input, file$2, 43, 4, 1059);
-    			add_location(label, file$2, 42, 3, 1047);
-    			attr_dev(div1, "class", "svelte-1heiqtr");
+    			add_location(input, file$2, 41, 4, 1043);
+    			add_location(label, file$2, 40, 3, 1031);
+    			attr_dev(div1, "class", "svelte-16xte9h");
     			toggle_class(div1, "big", /*big*/ ctx[1]);
-    			add_location(div1, file$2, 47, 3, 1127);
+    			add_location(div1, file$2, 45, 3, 1111);
     			attr_dev(div2, "class", "sampleli");
-    			add_location(div2, file$2, 40, 8, 958);
+    			add_location(div2, file$2, 38, 8, 942);
     			attr_dev(div3, "class", "samplelist");
-    			add_location(div3, file$2, 18, 4, 288);
+    			add_location(div3, file$2, 16, 4, 272);
     			attr_dev(div4, "class", "pointer");
-    			add_location(div4, file$2, 53, 4, 1219);
+    			add_location(div4, file$2, 50, 4, 1202);
     			attr_dev(div5, "class", "container");
-    			add_location(div5, file$2, 16, 0, 210);
+    			add_location(div5, file$2, 14, 0, 194);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9117,17 +9117,17 @@ var app = (function () {
     			div2 = element("div");
     			div2.textContent = "TOP";
     			attr_dev(h2, "class", "h3 mb-3 title");
-    			add_location(h2, file$1, 7, 1, 107);
+    			add_location(h2, file$1, 4, 1, 89);
     			attr_dev(p, "class", "sub-title");
-    			add_location(p, file$1, 10, 3, 203);
+    			add_location(p, file$1, 7, 3, 185);
     			attr_dev(div0, "class", "sampleli");
-    			add_location(div0, file$1, 9, 2, 177);
+    			add_location(div0, file$1, 6, 2, 159);
     			attr_dev(div1, "class", "samplelist");
-    			add_location(div1, file$1, 8, 1, 150);
+    			add_location(div1, file$1, 5, 1, 132);
     			attr_dev(div2, "class", "pointer");
-    			add_location(div2, file$1, 14, 1, 248);
+    			add_location(div2, file$1, 10, 1, 229);
     			attr_dev(div3, "class", "container");
-    			add_location(div3, file$1, 6, 0, 82);
+    			add_location(div3, file$1, 3, 0, 64);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9786,14 +9786,14 @@ var app = (function () {
     	const routes = {
     		'/': Home,
     		'/sample': Sample,
-    		'/sampleevents': SampleEvents,
-    		'/samplebindings': SampleBindings,
-    		'/saaplemotion': SampleMotion,
-    		'/samplestore': SampleStore,
-    		'/sampletrantitions': SampleTrantitions,
-    		'/samplesvg': SampleSvg,
-    		'/samplespecialelements': SampleSpecialElements,
-    		'/sampleclasses': SampleClasses,
+    		'/events': SampleEvents,
+    		'/bindings': SampleBindings,
+    		'/motion': SampleMotion,
+    		'/store': SampleStore,
+    		'/trantitions': SampleTrantitions,
+    		'/svg': SampleSvg,
+    		'/specialelements': SampleSpecialElements,
+    		'/classes': SampleClasses,
     		'/task': Task
     	};
 
@@ -9807,14 +9807,14 @@ var app = (function () {
     		Router,
     		Home,
     		Sample,
-    		SampleEvents,
-    		SampleBindings,
-    		SampleStore,
-    		SampleMotion,
-    		SampleTrantitions,
-    		SampleSvg,
-    		SampleClasses,
-    		SampleSpecialElements,
+    		Events: SampleEvents,
+    		Bindings: SampleBindings,
+    		Store: SampleStore,
+    		Motion: SampleMotion,
+    		Trantitions: SampleTrantitions,
+    		Svg: SampleSvg,
+    		Classes: SampleClasses,
+    		SpecialElements: SampleSpecialElements,
     		Task,
     		routes
     	});
